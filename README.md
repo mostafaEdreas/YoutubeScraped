@@ -14,7 +14,7 @@ This application is a web-based tool designed to scrape YouTube data based on us
 ### Installation Steps
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/mostafaEdreas/YoutubeScraped.git
    cd YoutubeScraped
    ```
 
