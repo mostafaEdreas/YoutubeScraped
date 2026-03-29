@@ -51,6 +51,9 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     @vite(['resources/js/app.js'])
+    <script>
+          const youtubePlaylistBase = "{{ config('youtube.links.playlist') }}";
+    </script>
     <script src="{{ asset('js/scraper.js') }}"></script>
 </body>
 

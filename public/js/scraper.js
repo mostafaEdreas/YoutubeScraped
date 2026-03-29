@@ -66,7 +66,7 @@ $(document).ready(function() {
             }
         });
     }
-
+  
     function appendCard(course) {
         const html = `
             <div class="col-md-3 course-item" data-category="${course.category}">
@@ -74,7 +74,16 @@ $(document).ready(function() {
                     <img src="${course.thumbnail}" class="card-img-top">
                     <span class="badge badge-lessons">15 درس</span>
                     <div class="card-body text-end">
-                        <h6 class="fw-bold text-truncate">${course.title}</h6>
+                        <h6 class="fw-bold text-truncate d-block w-100" 
+                            dir="auto" 
+                            style="text-align: right !important;"> 
+                            
+                            <a href="${youtubePlaylistBase}${course.playlist_id}" 
+                            title="${course.title}"  target="_blank"
+                            class="text-decoration-none text-dark">
+                                ${course.title}
+                            </a>
+                        </h6>
                         <p class="text-muted small">${course.channel_name}</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-light text-danger">${course.category}</span>

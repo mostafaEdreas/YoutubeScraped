@@ -11,6 +11,9 @@ return [
         'playlists'      => "{$youtubeBaseApiUrl}/playlists",
         'playlist_items' => "{$youtubeBaseApiUrl}/playlistItems",
     ],
+    'links' => [
+       'playlist' => 'https://www.youtube.com/playlist?list=',
+    ],
 
 
 ];
